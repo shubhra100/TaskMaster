@@ -6,25 +6,31 @@ TaskMaster is a modern, high-performance task management application built using
 
 ## 📸 Project Showcase
 
-### 1. Welcome & Authentication
+### 1. Home / Landing Page
+*The gateway to TaskMaster—a clean and professional entryway that invites users to get started.
+
+<img width="1911" height="938" alt="Screenshot (1020)" src="https://github.com/user-attachments/assets/16f4c631-46b4-4872-8f6a-b9ec163c3020" />
+
+
+### 2. Welcome & Authentication
 *Modern, secure login and registration with a premium glassmorphic aesthetic.*
 
 <img width="1920" height="931" alt="Screenshot (1032)" src="https://github.com/user-attachments/assets/abb72c9b-e4af-4bdb-971f-566a0265cb3c" />
 
-
-### 2. Angular Dashboard
+### 3. Angular Dashboard
 *A lightning-fast, reactive interface for managing tasks in real-time.*
 
-> [!TIP]
-> **[ MARK: INSERT ANGULAR DASHBOARD SCREENSHOT HERE ]**
-> *Example: `![Angular Dashboard](./screenshots/dashboard_angular.png)`*
+<img width="1902" height="919" alt="Screenshot (1025)" src="https://github.com/user-attachments/assets/0425a953-c6c6-40d0-9ff2-1e847105ae06" />
 
-### 3. MVC View
+
+### 4. MVC View
 *Server-side rendered (SSR) dashboard for a different perspective.*
 
-> [!TIP]
-> **[ MARK: INSERT MVC DASHBOARD SCREENSHOT HERE ]**
-> *Example: `![MVC Dashboard](./screenshots/dashboard_mvc.png)`*
+<img width="1846" height="923" alt="Screenshot (1026)" src="https://github.com/user-attachments/assets/ce462623-a430-42d1-a472-a8e376e6eecf" />
+
+
+<img width="1846" height="923" alt="Screenshot (1026)" src="https://github.com/user-attachments/assets/385c97a0-6309-4c3e-8316-1b91dc3814f4" />
+
 
 ---
 
@@ -69,10 +75,6 @@ TaskMaster is a modern, high-performance task management application built using
 > dotnet run
 
 The API should be running on https://localhost:xxxx (or your configured port).
-
-IMPORTANT
-
-[ MARK: INSERT SWAGGER UI SCREENSHOT HERE ] Screenshot of the API endpoints in Swagger.
 
 ### 3. Frontend Setup (Angular)
 ``bash :
