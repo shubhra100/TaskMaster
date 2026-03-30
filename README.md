@@ -73,11 +73,12 @@ IMPORTANT
 [ MARK: INSERT SWAGGER UI SCREENSHOT HERE ] Screenshot of the API endpoints in Swagger.
 
 ### 3. Frontend Setup (Angular)
+``bash
 
-cd TaskManagerFrontend
-npm install
-npm start
-Access the app at http://localhost:xxxx.
+cd TaskManagerFrontend 
+npm install 
+npm start 
+Access the app at http://localhost:xxxx. 
 
 ### 4. MVC Setup
 ``bash
