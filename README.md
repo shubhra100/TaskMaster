@@ -26,7 +26,8 @@ TaskMaster is a modern, high-performance task management application built using
 ### 4. MVC View
 *Server-side rendered (SSR) dashboard for a different perspective.*
 
-<img width="1846" height="923" alt="Screenshot (1026)" src="https://github.com/user-attachments/assets/ce462623-a430-42d1-a472-a8e376e6eecf" />
+<img width="1905" height="916" alt="Screenshot (1027)" src="https://github.com/user-attachments/assets/80f845a0-e11c-4644-885b-eaaf5190d1e6" />
+
 
 
 <img width="1846" height="923" alt="Screenshot (1026)" src="https://github.com/user-attachments/assets/385c97a0-6309-4c3e-8316-1b91dc3814f4" />
