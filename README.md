@@ -82,6 +82,7 @@ Access the app at http://localhost:xxxx.
 ``bash
 cd TaskManager.Mvc
 dotnet run
+
 -------------
 
 📂 Project Structure :
@@ -91,18 +92,21 @@ TaskMaster_Project/
 ├── TaskManagerFrontend/    # Angular 21 Application (Modern UI)
 ├── TaskManager.Mvc/        # .NET MVC Application (SSR UI)
 └── screenshots/            # Create this folder for your images!
+
 ------------------
 
 🛡️ Security Implementation
 Passwords: Hashed using BCrypt.Net before storage.
 Authorization: All Task API endpoints are protected by [Authorize] attributes.
 Tokens: JWT tokens include user claims for secure identity management.
+
 -----------
 
 🤝 Contributing
 Feel free to fork this project and submit a PR. For major changes, please open an issue first to discuss what you would like to change.
 
 Developed with ❤️ using .NET and Angular.
+
 ------------
 
 ✍️ Author
