@@ -9,8 +9,7 @@ TaskMaster is a modern, high-performance task management application built using
 ### 1. Home / Landing Page
 *The gateway to TaskMaster—a clean and professional entryway that invites users to get started.
 
-<img width="1911" height="938" alt="Screenshot (1020)" src="https://github.com/user-attachments/assets/16f4c631-46b4-4872-8f6a-b9ec163c3020" />
-
+<img width="1905" height="933" alt="Screenshot (1033)" src="https://github.com/user-attachments/assets/48093ba8-5717-4230-8c7e-c5a73993a42e" />
 
 ### 2. Welcome & Authentication
 *Modern, secure login and registration with a premium glassmorphic aesthetic.*
