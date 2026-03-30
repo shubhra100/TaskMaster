@@ -61,14 +61,54 @@ TaskMaster is a modern, high-performance task management application built using
 - [Angular CLI](https://angular.io/cli)
 
 ### 2. Backend Setup (API)
-```bash
+``bash
 cd TaskManager.Api
 dotnet restore
 dotnet run
-
-The API should be running on https://localhost:7112 (or your configured port).
+The API should be running on https://localhost:xxxx (or your configured port).
 
 IMPORTANT
 
 [ MARK: INSERT SWAGGER UI SCREENSHOT HERE ] Screenshot of the API endpoints in Swagger.
-3. Frontend Setup (Angular)
+
+### 3. Frontend Setup (Angular)
+``bash
+cd TaskManagerFrontend
+npm install
+npm start
+Access the app at http://localhost:xxxx.
+
+### 4. MVC Setup
+``bash
+cd TaskManager.Mvc
+dotnet run
+-------------
+
+📂 Project Structure :
+
+TaskMaster_Project/
+├── TaskManager.Api/        # .NET 10 Web API (Core Backend)
+├── TaskManagerFrontend/    # Angular 21 Application (Modern UI)
+├── TaskManager.Mvc/        # .NET MVC Application (SSR UI)
+└── screenshots/            # Create this folder for your images!
+------------------
+
+🛡️ Security Implementation
+Passwords: Hashed using BCrypt.Net before storage.
+Authorization: All Task API endpoints are protected by [Authorize] attributes.
+Tokens: JWT tokens include user claims for secure identity management.
+-----------
+
+🤝 Contributing
+Feel free to fork this project and submit a PR. For major changes, please open an issue first to discuss what you would like to change.
+
+Developed with ❤️ using .NET and Angular.
+------------
+
+✍️ Author
+SHUBHRA DIVYADARSHINI - Full-Stack Developer | .NET & Angular Enthusiast
+
+💼 LinkedIn: linkedin.com/in/yourprofile
+🐙 GitHub: @yourusername
+📧 Email: shubhradivyadarshini1242@gmail.com
+
