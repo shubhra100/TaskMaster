@@ -64,8 +64,11 @@ TaskMaster is a modern, high-performance task management application built using
 ``bash
 
 cd TaskManager.Api
+
 dotnet restore
+
 dotnet run
+
 The API should be running on https://localhost:xxxx (or your configured port).
 
 IMPORTANT
