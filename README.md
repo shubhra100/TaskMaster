@@ -61,7 +61,7 @@ TaskMaster is a modern, high-performance task management application built using
 - [Angular CLI](https://angular.io/cli)
 
 ### 2. Backend Setup (API)
-``bash
+``bash :
 
 cd TaskManager.Api
 
@@ -76,17 +76,21 @@ IMPORTANT
 [ MARK: INSERT SWAGGER UI SCREENSHOT HERE ] Screenshot of the API endpoints in Swagger.
 
 ### 3. Frontend Setup (Angular)
-``bash
+``bash :
 
 cd TaskManagerFrontend 
+
 npm install 
+
 npm start 
+
 Access the app at http://localhost:xxxx. 
 
 ### 4. MVC Setup
-``bash
+``bash:
 
 cd TaskManager.Mvc
+
 dotnet run
 
 -------------
