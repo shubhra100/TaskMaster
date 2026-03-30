@@ -53,7 +53,7 @@ TaskMaster is a modern, high-performance task management application built using
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started :
  
 ### 1. Prerequisites
 - [.NET 10 SDK](https://dotnet.microsoft.com/download)
@@ -95,31 +95,37 @@ dotnet run
 
 -------------
 
-📂 Project Structure :
+### 📂 Project Structure :
 
 TaskMaster_Project/
+
 ├── TaskManager.Api/        # .NET 10 Web API (Core Backend)
+
 ├── TaskManagerFrontend/    # Angular 21 Application (Modern UI)
+
 ├── TaskManager.Mvc/        # .NET MVC Application (SSR UI)
+
 └── screenshots/            # Create this folder for your images!
 
 ------------------
 
-🛡️ Security Implementation
+### 🛡️ Security Implementation :
 Passwords: Hashed using BCrypt.Net before storage.
+
 Authorization: All Task API endpoints are protected by [Authorize] attributes.
+
 Tokens: JWT tokens include user claims for secure identity management.
 
 -----------
 
-🤝 Contributing
+### 🤝 Contributing :
 Feel free to fork this project and submit a PR. For major changes, please open an issue first to discuss what you would like to change.
 
 Developed with ❤️ using .NET and Angular.
 
 ------------
 
-✍️ Author
+### ✍️ Author :
 SHUBHRA DIVYADARSHINI - Full-Stack Developer | .NET & Angular Enthusiast
 
 💼 LinkedIn: linkedin.com/in/yourprofile
