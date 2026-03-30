@@ -62,6 +62,7 @@ TaskMaster is a modern, high-performance task management application built using
 
 ### 2. Backend Setup (API)
 ``bash
+
 cd TaskManager.Api
 dotnet restore
 dotnet run
@@ -73,6 +74,7 @@ IMPORTANT
 
 ### 3. Frontend Setup (Angular)
 ``bash
+
 cd TaskManagerFrontend
 npm install
 npm start
@@ -80,6 +82,7 @@ Access the app at http://localhost:xxxx.
 
 ### 4. MVC Setup
 ``bash
+
 cd TaskManager.Mvc
 dotnet run
 
