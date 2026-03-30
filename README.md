@@ -1,1 +1,74 @@
-# TaskMaster
+# 🚀 TaskMaster - Full-Stack Task Management System
+
+TaskMaster is a modern, high-performance task management application built using a robust multi-layered architecture. It features a sleek, premium design and provides two different frontend experiences: a high-speed **Angular SPA** and a traditional **.NET MVC** dashboard, both powered by a secure **.NET 10 Web API**.
+
+---
+
+## 📸 Project Showcase
+
+### 1. Welcome & Authentication
+*Modern, secure login and registration with a premium glassmorphic aesthetic.*
+
+> [!TIP]
+> **[ MARK: INSERT LOGIN PAGE SCREENSHOT HERE ]**
+> *Example: `![Login Page](./screenshots/login.png)`*
+
+### 2. Angular Dashboard
+*A lightning-fast, reactive interface for managing tasks in real-time.*
+
+> [!TIP]
+> **[ MARK: INSERT ANGULAR DASHBOARD SCREENSHOT HERE ]**
+> *Example: `![Angular Dashboard](./screenshots/dashboard_angular.png)`*
+
+### 3. MVC View
+*Server-side rendered (SSR) dashboard for a different perspective.*
+
+> [!TIP]
+> **[ MARK: INSERT MVC DASHBOARD SCREENSHOT HERE ]**
+> *Example: `![MVC Dashboard](./screenshots/dashboard_mvc.png)`*
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Backend** | .NET 10 Web API |
+| **Database** | Entity Framework Core (In-Memory / SQL Server) |
+| **Frontend 1** | Angular 21 (vNext) |
+| **Frontend 2** | ASP.NET Core MVC |
+| **Security** | JWT (JSON Web Tokens) & BCrypt Password Hashing |
+| **API Docs** | Swagger / OpenAPI |
+
+---
+
+## ✨ Key Features
+
+- **🔐 Secure Authentication**: JWT-based auth flow with protected routes and persistent login sessions.
+- **⚡ Reactive Dashboard**: Real-time task updates using Angular's state-of-the-art signals/components.
+- **🔄 CRUD Operations**: Create, Read, Update, and Delete tasks with ease.
+- **✅ Status Toggling**: Mark tasks as completed or pending with a single click.
+- **🎨 Premium UI/UX**: minimalist "Light Glass" theme with smooth animations and responsive layouts.
+- **🏗️ Layered Architecture**: Follows Repository and Service patterns for clean, maintainable code.
+
+---
+
+## 🚀 Getting Started
+ 
+### 1. Prerequisites
+- [.NET 10 SDK](https://dotnet.microsoft.com/download)
+- [Node.js & npm](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
+
+### 2. Backend Setup (API)
+```bash
+cd TaskManager.Api
+dotnet restore
+dotnet run
+
+The API should be running on https://localhost:7112 (or your configured port).
+
+IMPORTANT
+
+[ MARK: INSERT SWAGGER UI SCREENSHOT HERE ] Screenshot of the API endpoints in Swagger.
+3. Frontend Setup (Angular)
