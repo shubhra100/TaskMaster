@@ -106,8 +106,6 @@ TaskMaster_Project/
 
 ├── TaskManager.Mvc/        # .NET MVC Application (SSR UI)
 
-└── screenshots/            # Create this folder for your images!
-
 ------------------
 
 ### 🛡️ Security Implementation :
