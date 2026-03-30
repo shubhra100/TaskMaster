@@ -73,7 +73,6 @@ IMPORTANT
 [ MARK: INSERT SWAGGER UI SCREENSHOT HERE ] Screenshot of the API endpoints in Swagger.
 
 ### 3. Frontend Setup (Angular)
-``bash
 
 cd TaskManagerFrontend
 npm install
