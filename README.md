@@ -9,9 +9,8 @@ TaskMaster is a modern, high-performance task management application built using
 ### 1. Welcome & Authentication
 *Modern, secure login and registration with a premium glassmorphic aesthetic.*
 
-> [!TIP]
-> **[ MARK: INSERT LOGIN PAGE SCREENSHOT HERE ]**
-> *Example: `![Login Page](./screenshots/login.png)`*
+<img width="1920" height="931" alt="Screenshot (1032)" src="https://github.com/user-attachments/assets/abb72c9b-e4af-4bdb-971f-566a0265cb3c" />
+
 
 ### 2. Angular Dashboard
 *A lightning-fast, reactive interface for managing tasks in real-time.*
