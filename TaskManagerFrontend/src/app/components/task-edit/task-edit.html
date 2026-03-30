@@ -1,0 +1,50 @@
+<div class="dashboard-container">
+  <div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-5">
+      <h1 class="display-4 fw-bold text-white">{{ isEditMode() ? 'Edit Task' : 'New Task' }}</h1>
+      <a routerLink="/tasks" class="back-btn px-4 py-2 rounded-3 text-decoration-none">
+        Back to Tasks
+      </a>
+    </div>
+
+    <div class="glass-card form-wrapper p-4 p-md-5 mx-auto max-width-800">
+      <form (ngSubmit)="onSubmit()" #taskForm="ngForm" class="task-form">
+        <div class="form-group mb-4">
+          <label for="title" class="form-label small fw-bold text-white-75">Task Title *</label>
+          <input type="text" id="title" class="form-control-dark" 
+                 [(ngModel)]="task.title" name="title" required
+                 #title="ngModel" placeholder="What needs to be done?">
+        </div>
+
+        <div class="form-group mb-4">
+          <label for="description" class="form-label small fw-bold text-white-75">Description</label>
+          <textarea id="description" class="form-control-dark" rows="4" 
+                    [(ngModel)]="task.description" name="description"
+                    placeholder="Add some details..."></textarea>
+        </div>
+
+        <div class="row mb-5 align-items-end">
+          <div class="col-md-6">
+            <label for="dueDate" class="form-label small fw-bold text-white-75">Due Date</label>
+            <input type="date" id="dueDate" class="form-control-dark" 
+                   [(ngModel)]="task.dueDate" name="dueDate">
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="d-flex align-items-center gap-2">
+              <input type="checkbox" id="isCompleted" class="custom-checkbox"
+                     [(ngModel)]="task.isCompleted" name="isCompleted">
+              <label for="isCompleted" class="text-white-75 small">Mark as Completed</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions pt-4 border-top border-white-10">
+          <button type="submit" class="save-btn px-5 py-3 rounded-pill" [disabled]="taskForm.invalid">
+            {{ isEditMode() ? 'Update Task' : 'Save Task' }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

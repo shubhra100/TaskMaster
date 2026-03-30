@@ -1,0 +1,72 @@
+@model IEnumerable<TaskManager.Mvc.Models.TaskItem>
+
+@{
+    ViewData["Title"] = "Task List (Server Rendered)";
+}
+
+<div class="container mt-5">
+    <div class="glass-bg p-4 rounded-4 shadow-sm">
+        <h1 class="display-6 fw-bold text-center mb-4">Task Management (MVC View)</h1>
+        
+        @if (!Model.Any())
+        {
+            <div class="alert alert-info text-center py-5">
+                <i class="bi bi-info-circle fs-3 d-block mb-3"></i>
+                No tasks available. Go ahead and add some via the Angular app or wait for API interaction!
+            </div>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-hover border-light align-middle">
+                    <thead class="bg-light text-muted small">
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th>Created At</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="border-top-0">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="fw-bold">@item.Id</td>
+                                <td>@item.Title</td>
+                                <td><span class="text-truncate d-inline-block" style="max-width: 200px;">@item.Description</span></td>
+                                <td>
+                                    @if (item.IsCompleted)
+                                    {
+                                        <span class="badge rounded-pill bg-success-subtle text-success border border-success px-3">Completed</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge rounded-pill bg-warning-subtle text-warning border border-warning px-3">Pending</span>
+                                    }
+                                </td>
+                                <td>@item.CreatedAt.ToShortDateString()</td>
+                                <td>
+                                    <a class="btn btn-sm btn-outline-primary rounded-pill px-3" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .glass-bg {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .table-hover tbody tr:hover {
+        background-color: rgba(248, 249, 250, 0.5);
+    }
+</style>

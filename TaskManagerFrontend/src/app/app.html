@@ -1,0 +1,166 @@
+<nav class="main-nav py-3 px-4">
+  <div class="container-fluid d-flex justify-content-between align-items-center px-lg-5">
+    <div class="logo d-flex align-items-center gap-2" routerLink="/">
+      <div class="logo-icon">🚀</div>
+      <span class="logo-text fw-bold fs-4">TaskMaster</span>
+    </div>
+    
+    <div class="nav-links d-flex gap-5 align-items-center">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      @if (authService.currentUser()) {
+        <a routerLink="/tasks" routerLinkActive="active">Dashboard</a>
+        <a href="http://localhost:5219/swagger" target="_blank" class="d-none d-md-block">API</a>
+        <a href="http://localhost:5176/TasksMvc" target="_blank" class="d-none d-md-block">MVC View</a>
+        
+        <div class="user-account-section ms-4 d-flex align-items-center">
+          <div class="nav-divider me-4"></div>
+          <div class="user-account-glass d-flex align-items-center gap-3 px-3 py-2 rounded-4 shadow-sm">
+            <div class="user-details text-end d-none d-sm-block">
+              <span class="user-greeting text-muted smallest text-uppercase">Welcome back</span>
+              <div class="user-name fw-bold text-dark small">{{ authService.currentUser() }}</div>
+            </div>
+            <div class="user-avatar shadow-sm">{{ authService.currentUser()?.charAt(0)?.toUpperCase() }}</div>
+            <button (click)="logout()" class="logout-text-btn ms-2" title="Logout">
+              Logout
+            </button>
+          </div>
+        </div>
+      } @else {
+        <a routerLink="/login" routerLinkActive="active" class="btn-login px-4 shadow-sm">Sign In</a>
+        <a routerLink="/register" class="btn-register px-4 shadow-sm">Get Started</a>
+      }
+    </div>
+  </div>
+</nav>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<style>
+  .main-nav {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .main-content {
+    min-height: calc(100vh - 80px);
+  }
+
+  .logo {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.02);
+  }
+
+  .logo-text {
+    background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+  }
+
+  .nav-links a {
+    text-decoration: none !important;
+    color: var(--text-muted) !important;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    padding: 8px 18px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+  }
+
+  .nav-links a:hover {
+    color: var(--text-main) !important;
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-links a.active {
+    color: var(--primary) !important;
+    background: rgba(99, 102, 241, 0.08);
+    border-color: rgba(99, 102, 241, 0.15);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.05);
+  }
+
+  .user-account-glass {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+  }
+
+  .nav-divider {
+    height: 30px;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .user-avatar {
+    width: 36px;
+    height: 36px;
+    background: var(--primary-gradient);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .logout-text-btn {
+    background: none;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #ef4444;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+  }
+
+  .logout-text-btn:hover {
+    background: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+  }
+
+  .btn-login {
+    text-decoration: none !important;
+    color: var(--text-main) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    padding: 10px 24px !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .btn-register {
+    text-decoration: none !important;
+    background: var(--primary-gradient) !important;
+    color: white !important;
+    border-radius: 100px;
+    padding: 10px 24px !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .smallest { font-size: 0.65rem; }
+  .user-greeting { display: block; margin-bottom: -4px; color: var(--text-muted); }
+</style>

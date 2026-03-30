@@ -1,0 +1,48 @@
+<div class="dashboard-container">
+  <div class="container py-5">
+    <div class="glass-card main-wrapper p-4 p-md-5">
+      <div class="d-flex justify-content-between align-items-center mb-5">
+        <h1 class="display-4 fw-bold text-white">Task Manager</h1>
+        <a routerLink="/tasks/add" class="add-btn px-4 py-2 rounded-3 shadow-sm text-decoration-none">
+          + New Task
+        </a>
+      </div>
+
+      <div class="row g-4">
+        @for (task of tasks(); track task.id) {
+          <div class="col-lg-4 col-md-6">
+            <div class="glass-card task-card p-4 d-flex flex-column h-100" [class.completed]="task.isCompleted">
+              <div class="card-header-row d-flex justify-content-between align-items-start mb-3">
+                <h3 class="fs-5 fw-bold text-white mb-0">{{ task.title }}</h3>
+                <div class="status-toggle d-flex align-items-center gap-2">
+                  <input type="checkbox" [checked]="task.isCompleted" 
+                         (change)="toggleStatus(task)" class="custom-checkbox">
+                  <span class="status-text small text-white-50">Completed</span>
+                </div>
+              </div>
+              
+              <p class="text-white-50 small flex-grow-1">{{ task.description }}</p>
+              
+              <div class="card-footer-row d-flex justify-content-between align-items-center mt-4 pt-4 border-top border-white-10">
+                <span class="date-text smallest text-white-50">Created: {{ task.createdAt | date:'M/d/yy' }}</span>
+                <div class="actions d-flex gap-3">
+                  <button (click)="editTask(task.id!)" class="action-link edit-link">Edit</button>
+                  <button (click)="deleteTask(task.id!)" class="action-link delete-link">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        } @empty {
+          <div class="col-12 text-center py-5">
+            <div class="empty-state glass-card p-5">
+              <i class="bi bi-clipboard2-x display-1 text-white-25 mb-4"></i>
+              <h2 class="text-white opacity-75">No tasks found</h2>
+              <p class="text-white-50">Start by creating your first task above</p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>
+

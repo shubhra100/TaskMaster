@@ -1,0 +1,92 @@
+<div class="home-container">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="glass-card hero-content">
+      <div class="welcome-badge">
+        <i class="bi bi-rocket-takeoff icon-small"></i> Evolution of Task Management
+      </div>
+      <h1>Master Your Workflow with <span class="gradient-text" style="background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); -webkit-background-clip: text; background-clip: text;">TaskMaster</span></h1>
+      <p class="hero-description">A high-performance task management ecosystem for the modern professional. Securely manage your workflow with real-time tracking, dual-module access, and professional-grade security.</p>
+      
+      <div class="hero-actions">
+        <a [routerLink]="['/register']" class="btn btn-primary">
+          GET STARTED <i class="bi bi-arrow-right icon-inline"></i>
+        </a>
+        <a [routerLink]="['/login']" class="btn btn-secondary">
+          SIGN IN
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2 class="section-title">Available Features</h2>
+    <div class="features-grid">
+      <div class="glass-card feature-card">
+        <div class="feature-icon-wrapper purple">
+          <i class="bi bi-list-check fs-3"></i>
+        </div>
+        <h3>Task Management</h3>
+        <p>Create, view, and organize your tasks with a modern interface. Our system ensures your workflow remains structured and efficient.</p>
+      </div>
+
+      <div class="glass-card feature-card">
+        <div class="feature-icon-wrapper blue">
+          <i class="bi bi-check2-circle fs-3"></i>
+        </div>
+        <h3>Status Tracking</h3>
+        <p>Monitor your progress in real-time. Easily toggle tasks between "In Progress" and "Completed" to stay on top of your daily goals.</p>
+      </div>
+
+      <div class="glass-card feature-card">
+        <div class="feature-icon-wrapper green">
+          <i class="bi bi-shield-lock fs-3"></i>
+        </div>
+        <h3>JWT Security</h3>
+        <p>Your data is protected by industry-standard JWT authentication. Every task you create is private and tied securely to your account.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="glass-card about-content">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-tagline">
+            <i class="bi bi-info-circle icon-small"></i> About our platform
+          </div>
+          <h2>Designed for the Creative Mind</h2>
+          <p>We believe that your digital workspace should be as clear and focused as your mind. Our website was built with the philosophy of minimalist excellence—removing the noise so your ideas can shine.</p>
+          
+          <ul class="feature-list">
+            <li>
+              <strong>User Data Isolation</strong>
+              <span>Experience true privacy with tasks filtered specifically for your logged-in session.</span>
+            </li>
+            <li>
+              <strong>Dual Architecture</strong>
+              <span>Access your dashboard via our modern Angular SPA or the lightning-fast .NET MVC interface.</span>
+            </li>
+            <li>
+              <strong>Secure Authentication</strong>
+              <span>Industry-standard BCrypt hashing and token-based protection for your peace of mind.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-visual">
+          <div class="floating-note note-1">💡 Inspiration</div>
+          <div class="floating-note note-2">📝 Task List</div>
+          <div class="floating-note note-3">🚀 Future Ideas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="home-footer">
+    <p>&copy; 2026 TaskMaster. Built with minimalist excellence.</p>
+  </footer>
+</div>
