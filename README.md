@@ -63,11 +63,11 @@ TaskMaster is a modern, high-performance task management application built using
 ### 2. Backend Setup (API)
 ``bash :
 
-cd TaskManager.Api
+> cd TaskManager.Api
 
-dotnet restore
+> dotnet restore
 
-dotnet run
+> dotnet run
 
 The API should be running on https://localhost:xxxx (or your configured port).
 
@@ -78,20 +78,20 @@ IMPORTANT
 ### 3. Frontend Setup (Angular)
 ``bash :
 
-cd TaskManagerFrontend 
+> cd TaskManagerFrontend 
 
-npm install 
+> npm install 
 
-npm start 
+> npm start 
 
 Access the app at http://localhost:xxxx. 
 
 ### 4. MVC Setup
 ``bash:
 
-cd TaskManager.Mvc
+> cd TaskManager.Mvc
 
-dotnet run
+> dotnet run
 
 -------------
 
@@ -128,7 +128,5 @@ Developed with ❤️ using .NET and Angular.
 ### ✍️ Author :
 SHUBHRA DIVYADARSHINI - Full-Stack Developer | .NET & Angular Enthusiast
 
-💼 LinkedIn: linkedin.com/in/yourprofile
-🐙 GitHub: @yourusername
 📧 Email: shubhradivyadarshini1242@gmail.com
 
